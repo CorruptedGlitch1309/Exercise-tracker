@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Exercise Tracker</title>
+    </head>
+    <body>
+        <header>
+            <div class="text-container">
+                <span id="score" class="score">Score:</span>
+                <span id="daily-high-score" class="score">High Score:</span>
+            </div>
+        </header>
+        <div id="calender-container">
+            <button type="button" class="btn" id="daily-exercise-btn">Daily Exercise</button>
+            <div id="calender">
+            </div>
+        </div>
+        <div id="container" class="container">
+            <button type="button" class="btn" id="add-exercise">Add Exercise</button>
+            <div id="exercise-container" class="exercise-container"></div>
+        </div>
+        <dialog id="add-form">
+            <form>
+                <button type="button" id="add-close-dialog" class="close-btn">&#10006</button>
+                <p><strong>Name:</strong></p>
+                <input type="text" id="name-input" class="text-input" required>
+                <p><strong>Score:</strong></p>
+                <input type="number" id="score-input" class="text-input" required>
+                <button id="submit-new-exercise" class="btn">Add Exercise</button>
+            </form>
+        </dialog>
+        <dialog id="daily-form">
+            <form>
+                <div id="daily-inputs">
+                </div>
+                <button id="close-daily" class="btn">Close</button>
+            </form>
+        </dialog>
+        <script src="./script.js"></script>
+    </body>
+</html>
